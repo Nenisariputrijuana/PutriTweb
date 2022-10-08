@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+ <title>Profil Diri</title>
+ <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body style="background-color:rgb(12, 235, 235);"> 
+    <img src="IMG_20210206_085056_244.jpg" alt="Girl in a jacket" width="200" height="200">
+
+    <div id="app">
+       <h2>{{message}}</h2>
+       <p>{{nama}}</p>
+       <P>{{nim}}</P>
+       <P>{{jurusan}}</P>
+       <p>{{fakultas}}</p>
+       <p>{{tempat_tanggal_lahir}}</p>
+       <P>{{jenis_kelamin}}</P>
+       <P>{{agama}}</P>
+      </div>
+
+      <script type="text/javascript">
+                var vm = new Vue({
+        el: '#app',
+        data: {
+            message: 'Profil Mahasiswa',
+            nama:   'Nama : Neni Sari Putri Juana',
+            nim: 'Nim : 11950123432',
+            jurusan:  'Jurusan :  teknik informatika',
+            fakultas:  'Fakultas : Sains dan teknologi',
+            tempat_tanggal_lahir :   'tempat tanggal lahir : ujung batu II, 06 maret 1999',
+           jenis_kelamin:   'jenis kelamin : perempuan',
+           agama:   'agama : islam'
+        }
+        })
+      </script>
+</html>
+</body>
